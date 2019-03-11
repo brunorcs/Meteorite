@@ -70,7 +70,11 @@ if (input$sel == 'Lima'){
   'Lima'}else if(input$sel == 'Ucayali'){ 'Pucallpa'}else if(input$sel == 'Junin'){
     'Huancayo'}else if(input$sel == 'Huanuco'){'Huanuco'}else if(input$sel == 'Ancash'){
       'Huaraz'
-    }
+    }else if(input$sel == "Tacna"){"Tacna"}else if(input$sel=="Moquegua"){"Moquegua"}
+    else if(input$sel=="Arequipa"){"Arequipa"}else if(input$sel=="Puno"){"Puno"}
+      else if(input$sel=="Madre de Dios"){"Puerto Maldonado"}else if(input$sel=="Cusco"){"Cusco"}
+      
+    
       
      })
     output$holo <- renderText({
@@ -78,7 +82,9 @@ if (input$sel == 'Lima'){
         'Nana'}else if(input$sel == 'Ucayali'){ 'El Maronal'}else if(input$sel == 'Junin'){
           'Santa Ana'}else if(input$sel == 'Huanuco'){'Huanuco'}else if(input$sel == 'Ancash'){
             'Recuay'
-          }
+          }else if(input$sel == "Tacna"){"Calana"}else if(input$sel=="Moquegua"){"Ubinas"}
+      else if(input$sel=="Arequipa"){"La Pampilla"}else if(input$sel=="Puno"){"Puno"}
+      else if(input$sel=="Madre de Dios"){"Malinowsky"}else if(input$sel=="Cusco"){"Granja Kcayra"}
     })
     output$mymap <- renderLeaflet({
       m <- leaflet()

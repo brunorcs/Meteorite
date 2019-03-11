@@ -48,7 +48,7 @@ ui <-dashboardPage(
                                  choices = Graf,selected = "Temperatura")
                       ),
                   
-                box(width = 5, title = 'Estadísticos', side = 'center',
+                box(width = 6, title = 'Estadísticos', side = 'center',
                       tableOutput(outputId = 'brun')
                   )
                                )

@@ -58,6 +58,6 @@ var_vi = summarise(var_ko,
 dinm = rep('Precipitacion',each = 5)
 var_vi$Variable = paste0(dinm)
 var_vi = select(var_vi,Variable,Departamento, Media, Max, Min, Mediana, Desv.est, Q1, Q3)
-stn = c("Junin", "Huanuco", "Ancash", "Lima" , "Ucayali")
+stn = c("Junin", "Huanuco", "Ancash", "Lima" , "Ucayali", "Tacna", "Moquegua","Arequipa","Puno","Madre de Dios","Cusco")
 Graf = c("Temperatura", "Precipitacion")
 adriana = read.csv("www/metadata.csv")
